@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>js can do</h2>
+    <p id = "demo">js can change html content,attributes,css,display,hide,show</p>
+    <p id = "demo2" style = "display : none">my name is sg</p>
+    <button type = "button" onclick = 'document.getElementById("demo").innerHTML = "Hello Javascript"'>click me</button>
+    <button type = "button" onclick = 'document.getElementById("demo").style.fontSize = "35px"'>click me</button>
+    <button type = "button" onclick = 'document.getElementById("demo").style.color = "blue"'>click me</button>
+    <button type = "button" onclick = 'document.getElementById("demo").style.display = "none"'>click me</button>
+    <button type = "button" onclick = 'document.getElementById("demo2").style.display = "block"'>click me</button>
+    <p id = "demo3"></p>
+    <script>
+  document.getElementById('demo3').innerHTML = 'this is js';
+</script>
+</body>
+</html>

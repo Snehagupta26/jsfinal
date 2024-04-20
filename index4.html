@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>declare variables : 4 ways automatically,var,let,const</p>
+    <p id = "demo"></p>
+    <script>
+        x = 9 ; 
+        y = 1;
+        z = x+y;
+        document.getElementById("demo").innerHTML = + z;
+    </script>
+    <p id = "q"></p>
+    <p id = "q1"></p>
+    <script>
+        var x =9;
+        document.getElementById("q").innerHTML = +x; 
+        {
+            var x = 3;
+        }
+        document.getElementById("q1").innerHTML = +x; 
+    </script>
+     <p id = "q2"></p>
+     <p id = "q21"></p>
+     <script>
+         let x =9;
+         document.getElementById("q2").innerHTML = +x; 
+         {
+             let x = 3;
+         }
+         document.getElementById("q21").innerHTML = +x; 
+     </script>
+</body>
+</html>

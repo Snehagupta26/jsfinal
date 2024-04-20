@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "demo"></p>
+    <p id = "demo2"></p>
+    <p id = "demo3"></p>
+    <p id = "demo4"></p>
+    <script>
+        const letters = new Set([1,2,3,4]);
+        document.getElementById("demo").innerHTML = letters.size;
+
+        const num = new Set();
+        num.add(67);
+        num.add(90);
+        document.getElementById("demo2").innerHTML = num.size;
+
+        const a = 567;
+        const b = 678;
+        const pum = new Set();
+        pum.add(a);
+        pum.add(b);
+        document.getElementById("demo3").innerHTML = pum.size;
+        document.getElementById("demo4").innerHTML = pum.values();
+    </script>
+</body>
+</html>

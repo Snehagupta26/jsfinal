@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>4 ways for output</p>
+    <p id = "demo"></p>
+    <script>
+    document.getElementById('demo').innerHTML = 'by using innerHtML';
+    </script>
+    <p id = "demo2"></p>
+    <script>
+    document.write("by using document.write()");
+    </script> 
+    <script>
+    alert("by alert");
+    </script> 
+    <script>
+    console.log("used console.log");
+    </script> 
+    <br>
+    <button onclick="window.print()">Print this page</button>
+    <p><b>dont use document.write() after loading whole pg . as it will remove all content of page</b></p>
+    <button type = "button" onclick = 'document.write("everything vanished")'>Click me</button>
+</body>
+</html>

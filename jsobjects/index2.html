@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "demo"></p>
+    <script>
+        const abc = {
+            age : 56,
+            color : "blue"
+        };
+        document.getElementById("demo").innerHTML = abc.age + abc["color"];
+    </script>
+
+<p id = "demo2"></p>
+<script>
+    const abcd = {
+        age : 563,
+        color : "purple"
+    };
+    let txt = "";
+    for(let x in abcd){
+        txt = txt + abcd[x] + " ";
+    }
+    document.getElementById("demo2").innerHTML = txt;
+</script>
+
+<p id = "demo3"></p>
+<p id = "demo4"></p>
+    <script>
+        const abce = {
+            age : 56,
+            color : "blue"
+        };
+        abce.weight = 89;
+
+        document.getElementById("demo3").innerHTML = abce.age +" "+ abce.weight;
+        delete abce.age;
+        document.getElementById("demo4").innerHTML = abce.age ;
+    </script>
+
+    <p id = "demo5"></p>
+    <script>
+        const pqr = {
+            name : "sia",
+            age : 30,
+            perfume :{
+                p1 : "dior",
+                p2 : "lotus"
+            }
+        };
+        document.getElementById("demo5").innerHTML = pqr.perfume.p1;
+    </script>
+
+    <p id = "demo6"></p>
+    <script>
+        const xyz = {
+            name : "pia",
+            cars : [
+                {name : "i10" , model : ["focus" , "hyndai"]},
+                {name : "i20" , model : ["cus" , "dai"]}
+            ]
+        }
+        let x = "";
+        for(let i in xyz.cars){
+            x += xyz.cars[i].name + " ";
+            for(let j in xyz.cars[i].model){
+                x += xyz.cars[i].model[j] + " " + "<br>";
+            }
+        }
+        document.getElementById("demo6").innerHTML = x;
+
+    </script>
+</body>
+</html>

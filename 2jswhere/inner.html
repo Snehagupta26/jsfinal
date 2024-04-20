@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--in head-->
+    <script>
+        function myf(){
+            document.getElementById("demo").innerHTML = "Bingo";
+        }
+    </script>
+</head>
+<body>
+    <p id = "demo"></p>
+    <button type = "button" onclick="myf()">click me</button>
+     <!--in body-->
+    <p id = "demo2"></p>
+    <button type = "button" onclick="myf2()">click me</button>
+    <script>
+        function myf2(){
+            document.getElementById("demo2").innerHTML = "Bingo once again";
+        }
+    </script>
+    <!--external js-->
+    <p id = "demo3"></p>
+    <script src = "script.js"></script>
+    <button type = "button" onclick="myf3()">click me</button>
+
+</body>
+</html>

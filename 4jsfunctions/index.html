@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "demo">tada</p>
+    <p id = "demo2"></p>
+    <p id = "demo3"></p>
+    <p id = "demo4"></p>
+    <p id = "demo5"></p>
+    <p id = "demo6"></p>
+    <p id = "demo7"></p>
+    <p id = "demo8"></p>
+    <p id = "demo9"></p>
+    <p id = "demo10"></p>
+    <button type ="button" onclick = " myf()">click</button>
+    <script>
+        function myf(){
+            document.getElementById("demo").innerHTML = "hi people";
+        }
+       
+        let x = myf2(4,3);
+        document.getElementById("demo2").innerHTML = x;
+        function myf2(a ,b){
+        return a * b;
+        }
+        
+        //anonymous function - function without name
+        let y = function (ay,by) {return ay * by};
+        document.getElementById("demo3").innerHTML = y;
+        
+        let z = y(1,1);
+        document.getElementById("demo4").innerHTML = z;
+        
+        //function constructor
+        const f3 = new Function("p" , "q" , "return p*q");
+        document.getElementById("demo4").innerHTML = f3(6,7);
+
+        //anonymous self invoking function
+        (function(){
+            document.getElementById("demo6").innerHTML = "hello";
+        })();
+
+        function myfun(a,b){
+            return arguments.length;
+        }
+        document.getElementById("demo7").innerHTML = myfun(4,3);
+
+        function myfun2(a,b){
+            return a+b;
+        }
+        const u = myfun2.toString();
+        document.getElementById("demo8").innerHTML = u;
+
+        //arrow functions
+        const i = (c,v) => c*v;
+        document.getElementById("demo9").innerHTML = i;
+        document.getElementById("demo10").innerHTML = i(10,20);
+
+
+    </script>
+
+</body>
+</html>

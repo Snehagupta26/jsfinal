@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "demo1"></p>
+    <p id = "demo2"></p>
+    <script>
+        const abc = {
+            color : "blue",
+            age : 45,
+            hobby : "dance",
+            get lang(){
+                return this.hobby;
+            }
+        }
+        document.getElementById("demo1").innerHTML = abc.lang;
+    </script>
+      <script>
+        const abcd = {
+            color : "blue",
+            age : 45,
+            hobby : "dance",
+            set lang(value){
+                 this.hobby = value;
+            }
+        };
+        abcd.lang = "sing";
+        document.getElementById("demo2").innerHTML = abcd.hobby;
+    </script>
+</body>
+</html>

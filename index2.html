@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myfun(){
+            document.getElementById("demo").innerHTML = "hello girls";
+        }
+    </script>
+</head>
+<body>
+    <p id = "demo"></p>
+    <button type = "button" onclick = "myfun()">click here</button>
+
+    <p id = "demo2"></p>
+    <button type = "button" onclick = "myf()">click me too</button>
+    <script>
+        function myf(){
+            document.getElementById("demo2").innerHTML = "hello boys";
+        }
+    </script>
+    <p id = "demo3"></p>
+    <script src = "script2.js"></script>
+<button type = "button" onclick = "myf1()">click here too</button>
+
+</body>
+</html>

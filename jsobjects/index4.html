@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "demo"></p>
+    <p id = "demo2"></p>
+    <p id = "demo3"></p>
+    <p id = "demo4"></p>
+    <p id = "demo4"></p>
+    <script>
+        function Person(age , weight , color){
+            this.age = age;
+            this.weight = weight;
+            this.color = color;
+        }
+
+        const sneha = new Person(20,56,"brown");
+        const sia = new Person(12,34,"pink");
+        sneha.car = "i10";
+        sia.hobby = function(){
+            return this.color;
+        }
+        document.getElementById("demo").innerHTML = sneha.age + " " + sneha.color+ " " + sneha.car;
+       
+       document.getElementById("demo2").innerHTML = sneha.car;
+       document.getElementById("demo3").innerHTML = sia.hobby();
+
+       function abc (coming , going , sitting){
+        this.coming = coming;
+        this.going = going;
+        this.sitting = sitting;
+
+       }
+       
+       abc.prototype.swimming = 42;
+       abc.prototype.running = function(){
+        return this.coming + this.going;
+       }
+       const pqr = new abc(4,5,6);
+       document.getElementById("demo4").innerHTML = pqr.swimming +" "+ pqr.running();
+    </script>
+</body>
+</html>

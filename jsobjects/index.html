@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "demo"></p>
+    <script>
+        let person = "Sneha";
+        document.getElementById("demo").innerHTML = person; 
+    </script>
+
+    <p id = "demo2"></p>
+    <script>
+        let human = {
+            firstName : "sneha",
+            lastName : "gupta",
+            age : 20,
+            eyecolor : "brown",
+            fullName : function(){ return this.eyecolor;}
+        };
+        document.getElementById("demo2").innerHTML = human.lastName + human.fullName();
+    </script>
+
+    <p id = "demo3"></p>
+    <p id = "demo4"></p>
+    <script>
+        const oo = new Object();
+        oo.age = 34;
+        oo.color = "pink";
+        document.getElementById("demo3").innerHTML = oo.color;
+        const pp = oo;
+        pp.age = 78;
+        document.getElementById("demo4").innerHTML = pp.age + " " + oo.age
+    </script>
+
+    
+</body>
+</html>
